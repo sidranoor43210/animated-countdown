@@ -9,12 +9,18 @@ body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmFrM8dxgAjgK2KkvX8hsXIVuf5TxZ-CUkPcZNR1ggi6CAHVikx17b_aWgneY1mIbljM8&usqp=CAU");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
 }
 
 h4 {
   font-size: 20px;
   margin: 5px;
   text-transform: uppercase;
+  color: aliceblue;
 }
 
 .counter {
@@ -160,4 +166,7 @@ h4 {
 #replay:hover span:after{
   opacity: 1;
   right: 0;
+}
+h1 {
+    color: aliceblue;
 }

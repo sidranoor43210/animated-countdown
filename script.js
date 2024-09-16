@@ -6,14 +6,14 @@ const replay = document.querySelector('#replay')
 runAnimation()
 
 function resetDOM() {
-  counter.classList.remove('hide')
-  finalMessage.classList.remove('show')
+  counter.classList.remove('hide') //Removes the hide class ,make it visible.
+  finalMessage.classList.remove('show')//Removes show class
 
-  nums.forEach((num) => {
+  nums.forEach((num) => {  // clear all classes from each number to reset their state
     num.classList.value = ''
   })
 
-  nums[0].classList.add('in')
+  nums[0].classList.add('in') // adds in class to initiate the entry animation
 }
 
 function runAnimation() {
@@ -35,6 +35,6 @@ function runAnimation() {
 }
 
 replay.addEventListener('click', () => {
-  resetDOM()
-  runAnimation()
+  resetDOM()//resetting animation
+  runAnimation()//starting animation
 })
